@@ -1,0 +1,88 @@
+<main>
+    <section>
+      <h1>
+        Bienvenidos A <span class="unicomer">Unicomer</span>
+      </h1>
+    </section>
+    <aside>
+      <div class="logo">
+          <span>LOGO</span>
+
+      </div>
+      <div class="sign-in" *ngIf="showLoginForm; else registerFormTem">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <div>
+            <label for="tipoDocumento">Tipo de Documento:</label>
+            <br>
+            <input type="text" id="tipoDocumento" formControlName="tipoDocumento" />
+          </div>
+
+          <div>
+            <label for="numeroDocumento">Número de Documento:</label>
+            <br>
+            <input type="text" id="numeroDocumento" formControlName="numeroDocumento" />
+          </div>
+          <div>
+            <label for="clave">Clave:</label>
+            <br>
+            <input type="password" id="clave" formControlName="clave"/>
+          </div>
+
+          <button type="submit">Ingresar</button>
+        </form>
+      </div>
+
+      <ng-template #registerFormTem >
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="sign-up">
+          <div>
+            <label for="tipoDocumento" class="label-form">Tipo de Documento:</label>
+            <br>
+            <input type="text" id="tipoDocumento" formControlName="tipoDocumento" />
+          </div>
+          <div>
+            <label for="numeroDocumento" class="label-form">Número de Documento:</label>
+            <br>
+            <input type="text" id="numeroDocumento" formControlName="numeroDocumento" />
+          </div>
+          <div>
+            <label for="nombre" class="label-form">Nombre:</label>
+            <br>
+            <input type="text" id="nombre" formControlName="nombre" />
+          </div>
+          <div>
+              <label for="apellido" class="label-form">Apellido:</label>
+              <br>
+              <input type="text" id="apellido" formControlName="apellido" />
+          </div>
+          <div>
+            <label for="email" class="label-form">Correo electrónico:</label>
+            <br>
+            <input type="email" id="email" formControlName="email" />
+        </div>
+          <div>
+            <label for="clave" class="label-form">Clave:</label>
+            <br>
+            <input type="password" id="clave" formControlName="clave"/>
+          </div>
+          <div>
+            <label for="confirmarClave" class="label-form">Confirma clave:</label>
+            <br>
+            <input type="password" id="confirmarClave" formControlName="confirmarClave"/>
+          </div>
+          <button type="submit">Registrar</button>
+        </form>
+
+      </ng-template>
+      <div class="keyboard" *ngIf="showLoginForm">
+         <span><i class="fa-regular fa-keyboard fa-lg" style="margin-right: 1vw;"></i>Teclado virtual</span>      </div>
+      <div class="register" *ngIf="showLoginForm else loginButtonBottom">
+        <span (click)="toggleForm()">¿No tienes cuenta? Registrate aquí.</span>
+      </div>
+      <ng-template #loginButtonBottom>
+        <div class="login" >
+          <span (click)="toggleForm()">¿Tienes cuenta? Ingresa aquí.</span>
+        </div>
+      </ng-template>
+    </aside>
+
+</main>

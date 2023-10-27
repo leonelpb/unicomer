@@ -1,0 +1,53 @@
+<nav class="side-menu" [ngClass]="collapsed ? 'sidenav-collapsed': ''">
+    <!-- Sidebar Header -->
+    <div class="logo-container">
+        <button class="logo" *ngIf="!collapsed" (click)="toggleCollapse()">L</button>
+        <div @fadeInOut  *ngIf="collapsed" class="logo-text"(click)="toggleCollapse()" [ngStyle]="{'justify-content': collapsed ? 'center' : 'center'}">LOGO</div>
+    </div>
+
+    <!-- Menu Items -->
+    <ul class="menu-items" [ngStyle]="{'padding': collapsed ? '0 2vw' : '0'}">
+      <li routerLink="home" [ngStyle]="{'justify-content': collapsed ? 'flex-start' : 'center'}">
+        <div class="icon-circle"><i class="fa-solid fa-house"></i></div>
+        <span *ngIf="collapsed">Inicio</span>
+      </li>
+      <li  [ngStyle]="{'justify-content': collapsed ? 'flex-start' : 'center'}">
+        <div class="icon-circle"><i class="fa-solid fa-credit-card"></i></div>
+        <span *ngIf="collapsed">Tarjetas</span>
+      </li>
+      <li  [ngStyle]="{'justify-content': collapsed ? 'flex-start' : 'center'}">
+        <div class="icon-circle"><i class="fa-solid fa-money-bill"></i></div>
+        <span *ngIf="collapsed">Prestamos</span>
+      </li>
+      <li  [ngStyle]="{'justify-content': collapsed ? 'flex-start' : 'center'}">
+        <div class="icon-circle">
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        </div>
+        <span *ngIf="collapsed" >Operaciones</span>
+      </li>
+      <li  [ngStyle]="{'justify-content': collapsed ? 'flex-start' : 'center'}">
+        <div class="icon-circle"><i class="fa-solid fa-hand-holding"></i></div>
+        <span *ngIf="collapsed" >Te Ofrecemos</span>
+      </li>
+      <li  [ngStyle]="{'justify-content': collapsed ? 'flex-start' : 'center'}">
+        <div class="icon-circle"><i class="fa-solid fa-shield"></i></div>
+        <span *ngIf="collapsed" >Seguros</span>
+      </li>
+      <li  [ngStyle]="{'justify-content': collapsed ? 'flex-start' : 'center'}">
+        <div class="icon-circle"><i class="fa-solid fa-gift"></i></div>
+        <span *ngIf="collapsed" >Puntos</span>
+      </li>
+      <li  [ngStyle]="{'justify-content': collapsed ? 'flex-start' : 'center'}">
+        <div class="icon-circle">
+          <i class="fa-solid fa-circle-question"></i>
+        </div>
+        <span *ngIf="collapsed" >Ayuda</span>
+      </li>
+      <li (click)="logOut()" routerLink="/login"  [ngStyle]="{'justify-content': collapsed ? 'flex-start' : 'center'}">
+        <div class="icon-circle">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </div>
+        <span *ngIf="collapsed" >Cerrar Sesión</span>
+      </li>
+    </ul>
+</nav>
