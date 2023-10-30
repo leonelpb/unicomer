@@ -1,27 +1,56 @@
-# TecnicalChallenge
+# Unicomer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
+## Overview
 
-## Development server
+Welcome to  "Unicomer"! This project was created as part of the Techforb Challege, and I'm excited to share it with you. In this project, I aimed to recreate the project shown in the shared images, I decided to start with the desktop version since I got the models from a desktop view. At first glance, the project looked very authentic, so I decided not to use CSS frameworks and only the SCSS preprocessor. THAT HURT!
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Technologies Used
 
-## Code scaffolding
+- Angular: Framework.
+- Firestore: To create an API and to cosume it.
+- RxJs: To read and bind the data from the API.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## How to Use
 
-## Build
+To get started with Unicomer, follow these steps:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Enter the next link https://unicomer-pxkw38hgs-leonelpb.vercel.app/home .
+2.  You will see a login page if you want, you can click "¿No tienes cuenta? Ingresa Aquí." so you can take a look to the page register .
+3. You can enter only clicking "Ingresar" or "Register ".
+4. Now at this point you'll be at the page "home"
 
-## Running unit tests
+## Screenshots
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Desktop](src/assets/project-bit/desktop-close.jpg)
+![Desktop](src/assets/project-bit/desktop-open.jpg)
+![Mobile](src/assets/project-bit/mobile-auth.jpg)
+![Mobile-Login](src/assets/project-bit/mobile-version.jpg)
+![register](src/assets/project-bit/login-desktop.jpg)
 
-## Running end-to-end tests
+## Suggestions for Improvement
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Here are a few areas where I believe This project could be improved:
 
-## Further help
+- Mobile Design.
+- The amount of data binded.
+- Menu.
+- Profile
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- I'm sure there  is more oportunities for improvement that is why I'm always open to feedback
+- There is probably an error displaying the BAR CHART. To be able to see the graph you only need to change the size of your window. I tried to solve this but ran out of time.
+
+## About Me
+
+!Leonel Pérez(/path/to/your/photo.png)
+
+Hi, I'm Leo, the creator of this. I'm passionate about creating things, staff or to struggle a bit using Angular (joke), and I thoroughly enjoyed working on this project is was definetly a challege.
+
+## Thoughts on the Project
+
+I'm proud of what I've accomplished. It was a challenging experience that allowed me to work only using SCSS and I must say that I felt a bit rusty i have been working with too much frameworks and this was like a good oportunity to refresh all my knowledge. I look forward to further developing and refining this project.
+
+## Thanks to Techforb
+
+I would like to express my gratitude to TechForb for giving me the opportunity to participate in their challenge. This project has been a valuable learning experience.
+
+Thank you for checking out!
