@@ -21,7 +21,7 @@ To get started with Unicomer, follow these steps:
 
 ## Screenshots
 
-![Desktop](tecnical-challenge\src\assets\project-bit\desktop-close.jpg)
+![Desktop](src\assets\project-bit\desktop-close.jpg)
 ![Desktop](tecnical-challenge\src\assets\project-bit\desktop-open.jpg)
 ![Mobile](tecnical-challenge\src\assets\project-bit\mobile-version.jpg)
 ![Mobile-Login](tecnical-challenge\src\assets\project-bit\mobile-auth.jpg)
