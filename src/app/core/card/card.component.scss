@@ -1,0 +1,98 @@
+.card{
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 7%;
+  background-color: #343b63;
+  border-radius: 1.9rem;
+  color: #c3c4c6;
+
+  div{
+    width: 100%;
+    height: 30%;
+  }
+  .card-balance{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .balance{
+      display: flex;
+      flex-direction: column;
+      span{
+        font-size: 0.75rem;
+      }
+      h3{
+        font-size: 1.2rem;
+        color: #eaeaea;
+        font-weight: 500;
+      }
+    }
+    .card-bank{
+      font-size: 3rem;
+      width: 20%;
+      margin-top: -2vh;
+    }
+  }
+
+  .card-number{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    .number{
+      width: 80%;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: flex-end;
+      span{
+        color: #eaeaea;
+      }
+    }
+  }
+  .card-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    align-items: center;
+
+    span{
+      font-size: 0.75rem;
+    }
+    h3{
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #eaeaea
+    }
+    .card-user{
+      width: 35%;
+      @media screen and (max-width:1024px) {
+        width: 40%;
+        h3{
+          font-size: 0.8rem;
+        }
+        span{
+          font-size: 0.75rem;
+        }
+      }
+    }
+    .card-expiration{
+      width: 30%;
+      @media screen and (max-width:1024px) {
+        width: 40%;
+        h3{
+          font-size: 0.8rem;
+        }
+        span{
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+  @media screen and (max-width:600px) {
+    border: 1px solid #fff;
+  }
+
+}

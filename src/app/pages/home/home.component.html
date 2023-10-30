@@ -1,6 +1,21 @@
 <main>
-    <app-menu (onToggleSideNav)="onToggleSideNav($event)"></app-menu>
+  <app-menu (onToggleSideNav)="onToggleSideNav($event)"></app-menu>
   <section>
     <app-header-profile></app-header-profile>
+    <div class="section-home">
+      <div class="title-section"><h3 style="font-weight: 500; margin: 2vh, 2vw;">Inicio</h3></div>
+      <div class="cards">
+        <app-card class="card"></app-card>
+        <app-incomes class="card"></app-incomes>
+        <app-expenses class="card"></app-expenses>
+      </div>
+      <div class="transactions-info-container">
+        <app-balance-chart class="chart" ></app-balance-chart>
+        <app-last-transactions class="last"></app-last-transactions>
+      </div>
+      <div class="transactions-tab">
+        <app-credits style="width: 100%;"></app-credits>
+      </div>
+    </div>
   </section>
 </main>

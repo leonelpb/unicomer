@@ -1,0 +1,26 @@
+<div class="card"*ngFor="let card of cards$ |async">
+  <div class="card-balance">
+    <div class="balance">
+      <span>Mi saldo:</span>
+      <h3>{{card.cardBalance | currency}}</h3>
+    </div>
+    <div class="card-bank">
+      <i class="fa-brands fa-cc-mastercard fa-md" style="color: #c3c4c6;"></i>
+    </div>
+  </div>
+  <div class="card-number">
+    <div class="number">
+     <span> {{numberMasking(card.cardNumber)}}</span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-user">
+      <span>Titular tarjeta:</span>
+        <h3>{{card.ownerName | uppercase}}</h3>
+    </div>
+    <div class="card-expiration">
+      <span>Valida hasta:</span>
+      <h3>{{card.month}}/{{card.year}} </h3>
+    </div>
+  </div>
+</div>

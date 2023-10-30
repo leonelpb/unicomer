@@ -1,0 +1,101 @@
+.credits{
+  height: 20vh;
+  width: 100%;
+  border-collapse: collapse;
+
+  thead{
+    height: 8vh ;
+    padding-bottom: 5vh;
+    th{
+      font-weight: 500;
+    }
+  }
+  tbody{
+    background-color:#ededed ;
+    tr{
+      padding: 8px;
+      text-align:center;
+      border: none;
+
+      &::nth-child(even){
+        background-color: #f2f2f2;
+      }
+      &:hover{
+        background-color: #ddd;
+      }
+      td{
+        text-align: center;
+        height: 8vh;
+      }
+    }
+    .checked-row{
+      border-left: 0.2rem solid #343b63 ;
+      transition: border-left 0.2s ease-in-out;
+    }
+    .circle{
+      width: 3vh;
+      height: 3vh;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.65rem;
+    }
+    .elipsis{
+     background-color: #dcdbdb;
+     color:  #c6c5c5;
+    }
+    button{
+      width: 20%;
+      border-radius: 20px;
+      width: 60%;
+      height: 70%;
+    }
+    .pagar{
+      background-color: gray;
+      color: #fff;
+    }
+    .cancelado{
+      background-color: #343b63;
+      color: #fff;
+    }
+  }
+  @media screen and (max-width:650px){
+    th{
+      display: none;
+    }
+    td{
+      display: grid;
+      gap:0.5rem;
+      grid-template-columns: 20ch auto;
+      padding: 0.5rem 1rem;
+
+    }
+    td:first-child{
+      padding-top:2rem;
+      padding-bottom: 2rem;
+      .input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    }
+    td:last-child{
+      padding-top:2rem
+    }
+    td:nth-of-type(7){
+      button{
+        width: 90%;
+      }
+    }
+    td::before{
+      content: attr(data-cell);
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+    td:nth-of-type(1)::before {
+      content: "Selecionar Credito";
+    }
+  }
+}

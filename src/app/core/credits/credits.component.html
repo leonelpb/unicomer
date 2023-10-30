@@ -1,0 +1,33 @@
+<table class="credits" >
+  <thead>
+    <tr>
+      <th></th>
+      <th>Monto Total</th>
+      <th>Cuotas</th>
+      <th>Fecha de emisión</th>
+      <th>Mensual</th>
+      <th>Tasa de interes</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let credit of  (credits$ | async)"[ngClass]="{'checked-row': credit.checked}">
+      <td style="width: 6%; accent-color: #343b63;"><input type="checkbox" [(ngModel)]="credit.checked"></td>
+      <td data-cell="Amount">{{ credit.amount | currency }}</td>
+      <td data-cell="Cuotas">{{ credit.paymentN }} de {{credit.installments}} </td>
+      <td data-cell="Fecha de emision">{{ credit.dateEmision }}</td>
+      <td data-cell="Mensual">{{ credit.monthlyFee | currency }}</td>
+      <td data-cell="Tasa de interes">{{ credit.incomeTax}}%</td>
+      <td>
+        <button class="pagar"*ngIf="credit.paid === false" >Pagar</button>
+        <button class="cancelado"*ngIf="credit.paid === true">Cancelado</button>
+      </td>
+      <td class="more-options">
+        <div class="circle elipsis">
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
