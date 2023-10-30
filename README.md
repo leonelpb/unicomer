@@ -22,10 +22,10 @@ To get started with Unicomer, follow these steps:
 ## Screenshots
 
 ![Desktop](src/assets/project-bit/desktop-close.jpg)
-![Desktop](tecnical-challenge\src\assets\project-bit\desktop-open.jpg)
+![Desktop](src/assets/project-bit/desktop-open.jpg)
 ![Mobile](tecnical-challenge\src\assets\project-bit\mobile-version.jpg)
-![Mobile-Login](tecnical-challenge\src\assets\project-bit\mobile-auth.jpg)
-![register](tecnical-challenge\src\assets\project-bit\register-desktop.jpg)
+![Mobile-Login](src/assets/project-bit/mobile-version.jpg)
+![register](src/assets/project-bit/login-desktop.jpg)
 
 ## Suggestions for Improvement
 
@@ -37,6 +37,7 @@ Here are a few areas where I believe This project could be improved:
 - Profile
 
 - I'm sure there  is more oportunities for improvement that is why I'm always open to feedback
+- There is probably an error displaying the BAR CHART. To be able to see the graph you only need to change the size of your window. I tried to solve this but ran out of time.
 
 ## About Me
 
